@@ -9,7 +9,7 @@
       <div class="conte">
            <% using (Html.BeginForm()){ %>
                <div class="login">
-                  <%:Html.TextBox("username") %> <br />
+                  <%:Html.TextBox("username","", new {@class="us" })%> <br />
                   <%:Html.Password("password") %><br />
                  <input type="submit" value="登录" />
                </div>
