@@ -6,8 +6,14 @@
     <link href="~/Content/login/login.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div class="conte">
-           
+      <div class="conte">
+           <% using (Html.BeginForm()){ %>
+               <div class="login">
+                  <%:Html.TextBox("username") %> <br />
+                  <%:Html.Password("password") %><br />
+                 <input type="submit" value="登录" />
+               </div>
+           <%} %>
      </div>
 </body>
 </html>
